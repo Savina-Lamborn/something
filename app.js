@@ -24,3 +24,19 @@ const navSlide = () => {
 }
 
 navSlide();
+
+const parallax = document.getElementById("parallax");
+
+window.addEventListener("scroll", function()
+{
+    let scrollPosition = window.pageYOffset;
+        
+    parallax.style.backgroundPositionY = scrollPosition * 0.7 + "px";
+    console.log('offset: ' + scrollPosition);
+})
+
+
+
+
+
+
